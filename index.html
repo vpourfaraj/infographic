@@ -410,7 +410,7 @@ function basename(path) {
 }
 
 // main function to link svg elements to modal popups with data in csv
-function link_svg({svg, csv, svg_id = 'svg', toc_id = 'toc', hover_color = 'yellow', width = '100%', 
+function link_svg({svg, csv, svg_id = 'svg', toc_id = 'toc', hover_color = 'yellow', width = '100%',
   height = '100%', modal_url_pfx, toc_style = "list", colored_sections = false,
   section_colors = ['LightGreen', 'MediumOrchid', 'Orange'], text_toggle = 'none',
   svg_filter, full_screen_button = true, button_text = "Full Screen", tooltip = true} = {}) {
@@ -434,21 +434,21 @@ function link_svg({svg, csv, svg_id = 'svg', toc_id = 'toc', hover_color = 'yell
   // open up the svg in d3
   d3.xml(svg).then((f) => {
 
-    // check to see if full screen is possible on this browser, if so create full screen option for svg 
+    // check to see if full screen is possible on this browser, if so create full screen option for svg
     // (but only if the function parameter full_screen_button is set to true)
-    if (full_screen_button && (document.fullscreenEnabled || document.webkitFullscreenEnabled)){ 
+    if (full_screen_button && (document.fullscreenEnabled || document.webkitFullscreenEnabled)){
 
-      // If this is Safari, when full screen mode has been enabled, the height and width of the svg element have to be 
-      // resized by this javascript to actually be full screen. When full screen mode is disabled in Safari, we need to 
+      // If this is Safari, when full screen mode has been enabled, the height and width of the svg element have to be
+      // resized by this javascript to actually be full screen. When full screen mode is disabled in Safari, we need to
       // reset the height and width of the svg element back to the original size.
       var webkitElem = document.getElementById(svg_id);
       webkitElem.addEventListener('webkitfullscreenchange', (event) => {
         if (document.webkitFullscreenElement) {
           webkitElem.style.width = (window.innerWidth) + 'px' ;
-          webkitElem.style.height = (window.innerHeight) + 'px'; 
+          webkitElem.style.height = (window.innerHeight) + 'px';
         } else {
-          webkitElem.style.width = width; 
-          webkitElem.style.height = height; 
+          webkitElem.style.width = width;
+          webkitElem.style.height = height;
         }
       });
 
@@ -458,7 +458,7 @@ function link_svg({svg, csv, svg_id = 'svg', toc_id = 'toc', hover_color = 'yell
         .attr("style", "margin-bottom: 5px; font-size: large;")
         .attr("class", "btn btn-info fa fa-arrows-alt")
         .on("click", openFullScreen)
-        .attr("id", "top-button");            
+        .attr("id", "top-button");
 
       // Code to activate full screen upon clicking button
       function openFullScreen(){
@@ -474,9 +474,9 @@ function link_svg({svg, csv, svg_id = 'svg', toc_id = 'toc', hover_color = 'yell
     // attach svg into html document
     var div = d3.select('#' + svg_id);
     var f_child = div.node().appendChild(f.documentElement);
-    
+
     // attach modal window into html document, into the svg_id container
-    appendHtml(div.node(), modal_html); 
+    appendHtml(div.node(), modal_html);
 
     // append div for svg tooltip
     tooltip_div = d3.select('#' + svg_id).append("div")
@@ -689,7 +689,7 @@ function element_highlight_add(icon_id, svg_id, hover_color){
 
 function icon_append(d, h, modal_url_pfx, svg_id, hover_color, section_content, text_column = true){
   if(d.link == null){ // no hyperlink given for modal window
-    if(modal_url_pfx != null){ // does value exist for modal_url_pfx 
+    if(modal_url_pfx != null){ // does value exist for modal_url_pfx
       if(modal_url_pfx.charAt(modal_url_pfx.length-1) != "/"){ // ensure backslash is last character of variable modal_url_pfx
         modal_url_pfx = modal_url_pfx + "/";
       }
@@ -702,7 +702,7 @@ function icon_append(d, h, modal_url_pfx, svg_id, hover_color, section_content, 
   }
   else{ // hyperlink given for modal window
     if (d.link.slice(0, 4) != "http"){ //only modify hyperlink if absolute link not given
-      if(modal_url_pfx != null){ // does value exist for modal_url_pfx 
+      if(modal_url_pfx != null){ // does value exist for modal_url_pfx
         if(modal_url_pfx.charAt(modal_url_pfx.length-1) != "/"){ // ensure backslash is last character of variable modal_url_pfx
           modal_url_pfx = modal_url_pfx + "/";
         }
@@ -736,7 +736,7 @@ function icon_append(d, h, modal_url_pfx, svg_id, hover_color, section_content, 
   }
 
   function handleMouseOver(){
-    // determine x and y position of svg 
+    // determine x and y position of svg
     var svg_position = document.getElementById(svg_id).getBoundingClientRect();
     var y_offset = -28;
 
@@ -791,11 +791,11 @@ function icon_append(d, h, modal_url_pfx, svg_id, hover_color, section_content, 
   return section_content;
 }
 
-// main function to link table elements to modal popups. 
+// main function to link table elements to modal popups.
 // The only argument taken is 'csvLink' which is a link to a csv file with the following columns:
 // EPU, indicator_name, indicator_chunk_title, image_url, caption, alt_text, data_link, time_min, time_max, methods_link
 function link_table(csvLink) {
-  // load in csv file 
+  // load in csv file
   d3.csv(csvLink).then(function(dataSet) {
 
     // get rid of keys in array of dataSet (the javascript library DataTable that generates the html table doesn't do well with keyed arrays)
@@ -821,8 +821,8 @@ function link_table(csvLink) {
               { title: 'indicator_chunk_title' },
               { title: 'image_url' },
               { title: 'caption' },
-              { title: 'alt_text' },   
-              { title: 'data_link' },                           
+              { title: 'alt_text' },
+              { title: 'data_link' },
               { title: 'Year Beginning' },
               { title: 'Year End' },
               { title: 'methods_link' }
@@ -836,7 +836,7 @@ function link_table(csvLink) {
         document.getElementById('caption').innerHTML = data[4];
 
         // most elements in the modal window are a 1 to 1 copy/paste from the cells in the data table
-        // the image source is different. The image link given in the table is for the github page for 
+        // the image source is different. The image link given in the table is for the github page for
         // an image, but we want the raw image on github. The following translates the former to the latter.
         var img_src = data[3];
         img_src = "https://raw.githubusercontent.com/" + img_src.split("https://github.com/")[1];
@@ -850,7 +850,7 @@ function link_table(csvLink) {
         d3.select("#datalink").select("a").remove();
         d3.select("#datalink").select("i").remove();
         d3.select("#datalink").append("i")
-          .attr("class", "fas fa-external-link-alt");     
+          .attr("class", "fas fa-external-link-alt");
         d3.select("#datalink").append("a")
           .attr("href", data[6])
           .attr("target", "_blank")
@@ -861,7 +861,7 @@ function link_table(csvLink) {
         // only add a data methodology link if one is given.
         if (data[9] != ""){
           d3.select("#methodslink").append("i")
-            .attr("class", "fas fa-external-link-alt");  
+            .attr("class", "fas fa-external-link-alt");
           d3.select("#methodslink").append("a")
             .attr("href", data[9])
             .attr("target", "_blank")
@@ -981,7 +981,8 @@ z-index: 100001 !important;
   link_svg({
     svg: "inkscape_example.svg",
     csv: "icon_link.csv",
-    svg_filter: "",   
+    hover_color: 'yellow'
+    svg_filter: "",
     toc_style: 'list',
     text_toggle: 'toggle_off'});
 </script>
