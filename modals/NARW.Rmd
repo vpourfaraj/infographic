@@ -3,4 +3,6 @@ pagetitle: "North Atlantic Right Whales"
 output: html_document
 ---
 
-![For details, see [NATIONAL OCEANIC AND ATMOSPHERIC ADMINISTRATION](https://www.fisheries.noaa.gov/species/north-atlantic-right-whale#overview)]
+For details, see [NATIONAL OCEANIC AND ATMOSPHERIC ADMINISTRATION](https://www.fisheries.noaa.gov/species/north-atlantic-right-whale#overview)
+
+[![](NARW.jpg)](https://github.com/vpourfaraj/infographic/blob/main/modals/NARW.jpg)
