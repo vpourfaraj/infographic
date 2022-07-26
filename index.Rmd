@@ -3,6 +3,7 @@ title: "Social-ecological map of the lobster fishery in Maritimes region"
 params:
   csv: "icon_link.csv"
   svg: "inkscape_example.svg"
+  hover_color: 'yellow'
   
 ---
 
