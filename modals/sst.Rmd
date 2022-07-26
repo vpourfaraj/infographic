@@ -1,0 +1,6 @@
+---
+pagetitle: "SST"
+output: html_document
+---
+
+![For details, see [Long-term Sea Surface Temperature](https://noaa-edab.github.io/tech-doc/long-term-sea-surface-temperature.html)](https://raw.githubusercontent.com/NOAA-EDAB/ecodata/master/docs/LTL_MAB_files/figure-html/long-term-sst-1.png)

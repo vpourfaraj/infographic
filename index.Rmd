@@ -1,0 +1,12 @@
+---
+title: "Social-ecological map of the lobster fishery in Maritimes region"
+params:
+  csv: "icon_link.csv"
+  svg: "inkscape_example.svg"
+  
+---
+
+For more information about our team please refer to [Blue Economy Lobster Team](https://sites.google.com/view/imses/about-us).
+
+```{r svg, child = '_svg-html_child.Rmd'}
+```
