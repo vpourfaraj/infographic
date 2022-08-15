@@ -1,0 +1,13 @@
+---
+pagetitle: "lobster"
+output: html_document
+---
+
+
+
+
+[DFO Assessment of lobster in LFA 34 ](https://www.dfo-mpo.gc.ca/csas-sccs/Publications/SAR-AS/2021/2021_015-eng.html)
+
+[DFO Assessment of lobster in LFA 35- 38](https://www.dfo-mpo.gc.ca/csas-sccs/Publications/SAR-AS/2021/2021_020-eng.html)
+
+[![](landed%20value.jpg)](https://github.com/vpourfaraj/infographic/blob/main/modals/landed%20value.jpg)
