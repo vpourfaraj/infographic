@@ -3,4 +3,4 @@ pagetitle: "SST"
 output: html_document
 ---
 
-![For details, see [Long-term Sea Surface Temperature](https://noaa-edab.github.io/tech-doc/long-term-sea-surface-temperature.html)](https://raw.githubusercontent.com/NOAA-EDAB/ecodata/master/docs/LTL_MAB_files/figure-html/long-term-sst-1.png)
+![Ocean temperature time series in the Scotian Shelf and one for the Bay of Fundy collected by DFO monitoring programs. Long-term increases are observed from in situ sea surface temperature (0 m, 1947--2016, positive trend of 0.15ºC per decade, significant at 1% level) and for the deeper layer (250 m, 1947--2016, positive trend of 0.36ºC per decade, significant at 1% level) of the Emerald Basin region of the Scotian Shelf. Depth-averaged ocean temperature (0--90 m) from the Prince 5 station in the Bay of Fundy (1924--2016, positive trend of 0.16ºC per decade, significant at 1% level) indicates a similar long-term warming trend. Source: [Greenan et al. 2018](https://www.nrcan.gc.ca/sites/www.nrcan.gc.ca/files/energy/Climate-change/pdf/CCCR-Chapter7-ChangesInOceansSurroundingCanada.pdf)](SST-Maritimes.PNG)
