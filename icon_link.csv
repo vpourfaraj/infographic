@@ -1,5 +1,4 @@
 svg,icon,title,link,section,not_modal
-inkscape_example.svg,thermometer,SST,modals/sst.html,Category 2,T
-inkscape_example.svg,indigenous,Indigenous rights & reconciliation,modals/modal_image.html,Category 2,T
-inkscape_example.svg,rightwhale,Right whale management,modals/NARW.html,Category 2,T
-inkscape_example.svg,lobster,Lobster productivity & abundance,modals/lobster.html,Category 1,T
+IMSES.svg,rightsholders,Indigenous rights & reconciliation,modals/modal_image.html,Category 1,F
+IMSES.svg,rightwhale,Right whale management,modals/NARW.html,Category 1,F
+IMSES.svg,lobsterfishery,Lobster Fishery,modals/lobster.html,Category 1,F
