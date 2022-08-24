@@ -1,0 +1,8 @@
+---
+title: "Sustainable communities"
+output: html_document
+---
+
+##### Contribution of fishing to well-being of communities, social capital, informed citizenry and cultural heritage.
+
+[DFO Departmental Sustainable Development Strategy 2020 to 2023](https://www.dfo-mpo.gc.ca/sds-sdd/2020-2023/index-eng.html)
