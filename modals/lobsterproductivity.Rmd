@@ -1,0 +1,10 @@
+---
+title: "lobster productivity and abundance"
+output: html_document
+---
+
+[Assessment of American Lobsterin Lobster Fishing Areas 35--38](https://waves-vagues.dfo-mpo.gc.ca/library-bibliotheque/4097943x.pdf)
+
+[Assessment of Lobster in Lobster Fishing Area 34](https://waves-vagues.dfo-mpo.gc.ca/library-bibliotheque/40976002.pdf)
+
+[Top-down and bottom-up forces interact at thermal range extremes on American lobster](https://doi.org/10.1111/1365-2656.12322)
