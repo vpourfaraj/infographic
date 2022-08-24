@@ -1,0 +1,12 @@
+---
+pagetitle: "calanus"
+output: html_document
+---
+
+[Zooplankton biomas & *Calanus finmarchicus* abundance in Maritimes Region](https://waves-vagues.dfo-mpo.gc.ca/library-bibliotheque/347246.pdf)
+
+[Egg production rates of *Calanus finmarchicus* in the western North Atlantic](https://cdnsciencepub.com/doi/pdf/10.1139/f99-278)
+
+[Bridging the spawner-recruit disconnect: trends in American lobster recruitment linked to the pelagic food web](https://docserver.ingentaconnect.com/deliver/connect/umrsmas/00074977/v94n3/s14.pdf?expires=1661348156&id=0000&titleid=10983&checksum=08B3F978A54CF172543E5D1E1FA764A6&host=https://www.ingentaconnect.com)
+
+![Parallel time series of neuston net-sampled lobster postlarvae and plankton net-sampled *Calanus finmarchicus* from Seabrook Station Environmental Monitoring (SSEM). The two indices were significantly correlated over the 27 yr time series (r = 0.55, P = 0.0038). Refer to Table 2 for associated correlation statistics evaluating the spatial coherence between C. finmarchicus at SSEM and young-of-the-year at American Lobster Settlement Index study areas throughout the Gulf of Maine](calanustimeseries.PNG)
