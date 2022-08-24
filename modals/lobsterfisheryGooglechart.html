@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>    
+<head>
   <title>Basic Line Chart in Google Charts</title>
   <meta charset="utf-8"/>
   <!-- The first thing to do is load the initial Google javascript library for charting -->
@@ -17,10 +17,10 @@
 
     // Let's define that function drawGID. The function will:
     //  1. set up the data query in the way that Google needs it (but don't get  the data yet)
-    //  2. Send that data query to another function (called handleQueryResponse) that will actually pull the data and create the graph 
+    //  2. Send that data query to another function (called handleQueryResponse) that will actually pull the data and create the graph
     function drawGID() {
-      var Google_Spreadsheet_Link = 
-        'https://docs.google.com/spreadsheets/d/1kb9SPsioe0163b2_xICUp1sOvYGQtBmiLiSkEeW1u-Y/edit?usp=sharing';
+      var Google_Spreadsheet_Link =
+        'https://docs.google.com/spreadsheets/d/13ywDT-n-pgVAJQWhqOHbdYcCemehQEH00WXGjJnMUYM/edit?usp=sharing';
       var query = new google.visualization.Query(Google_Spreadsheet_Link);
       query.send(handleQueryResponse);
     }
@@ -34,10 +34,10 @@
       hAxis: { // options for the X Axis
           title: "Year", // Set the X Axis title
           gridlines: {color: 'transparent'}, // no X Axis gridlines
-          format: '####', // No commas in the X Axis labels
+          format: '####', // No cmmas in the X Axis labels
           titleTextStyle: {bold: false, italic: false }}, // Set how the X Axis title looks
       vAxis: {  // options for the Y Axis
-          title: "Humpback Whale Sightings",  // Set the Y Axis title
+          title: "Landings in metric tonnes",  // Set the Y Axis title
           titleTextStyle: {bold: false, italic: false }, // Set how the Y Axis title looks
           minorGridlines: {color: 'transparent'}} // No minor Y Axis gridlines
       };
@@ -66,11 +66,11 @@
 <body>
   <!-- Identify where the chart should be drawn. -->
   <div>
-    <h3 style="text-align:center;">A Basic Line Chart in Google Charts</h3>
+    <h3 style="text-align:center;"> Timeseries of American lobster landings in Canada</h3>
     <div id="chart_div"/>
   </div>
     <p>
-    The data behind this Google Chart is contained within <a href = 'https://docs.google.com/spreadsheets/d/1kb9SPsioe0163b2_xICUp1sOvYGQtBmiLiSkEeW1u-Y/edit?usp=sharing' target ="=_parent">this Google Sheet</a>. Here is some sample explanatory text about the chart.
+    The data behind this Google Chart is contained within <a href = 'https://docs.google.com/spreadsheets/d/13ywDT-n-pgVAJQWhqOHbdYcCemehQEH00WXGjJnMUYM/edit?usp=sharing' target ="=_parent">this Google Sheet</a>. Text can be added.
 </body>
 
 </html>

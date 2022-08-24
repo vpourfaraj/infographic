@@ -1,7 +1,7 @@
 svg,icon,title,link,section,not_modal
 IMSES.svg,rightsholders,Indigenous rights & reconciliation,modals/modal_image.html,Rightsholders,F
 IMSES.svg,rightwhale,Right whale management,modals/NARW.html,Governance,F
-IMSES.svg,lobsterfishery,Commercial Lobster Fishery,modals/fisheryGoolechart.html,Economic,F
+IMSES.svg,lobsterfishery,Commercial Lobster Fishery,modals/lobsterfisheryGooglechart.html,Economic,F
 IMSES.svg,aquaculture,Aquaculture,modals/aquaculture.html,Governance,F
 IMSES.svg,thermometer,Ocean water temperature ,modals/sst.html,Climate,F
 IMSES.svg,calanus,Copepod abundance & distribution,modals/calanus.html,Ecological,F
