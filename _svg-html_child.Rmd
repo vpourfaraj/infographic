@@ -14,7 +14,9 @@
   link_svg({
     svg: "`r params$svg`",
     csv: "`r params$csv`",
-    svg_filter: "`r params$svg_filter`",   
-    toc_style: 'list',
-    text_toggle: 'toggle_off'});
+    svg_filter: "`r params$svg_filter`", 
+    hover_color: 'red',
+    colored_sections: false,
+    toc_style: 'accordion',
+    text_toggle: 'toggle_on'});
 </script>

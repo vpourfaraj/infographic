@@ -3,8 +3,7 @@ title: "Social-ecological map of the lobster fishery in Maritimes region"
 params:
   csv: "icon_link.csv"
   svg: "IMSES.svg"
-  hover_color: 'yellow'
-  
+
 ---
 
 For more information about our team please refer to [Blue Economy Lobster Team](https://sites.google.com/view/imses/about-us).
